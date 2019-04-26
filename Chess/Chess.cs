@@ -9,7 +9,7 @@ namespace Chess
     public class Chess
     {
 
-        string fen;
+        public string fen { get; private set; }
 
         public Chess (string fen = "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1")
         {
