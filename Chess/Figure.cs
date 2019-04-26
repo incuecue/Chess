@@ -17,12 +17,12 @@ namespace Chess
         whiteKnight = 'N',
         whitePawn = 'P',
 
-        blackKing = 'K',
-        blackQueen = 'Q',
-        blackRook = 'R',
-        blackBishop = 'B',
-        blackKnight = 'N',
-        blackPawn = 'P'
+        blackKing = 'k',
+        blackQueen = 'q',
+        blackRook = 'r',
+        blackBishop = 'b',
+        blackKnight = 'n',
+        blackPawn = 'p'
 
     }
 }
