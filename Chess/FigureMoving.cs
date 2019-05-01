@@ -35,6 +35,6 @@ namespace Chess
         public int DeltaY { get { return to.y - from.y; } }
 
         public int AbsDeltaX { get { return Math.Abs(DeltaX); } }
-        public int AbsDeltaX { get { return Math.Abs(DeltaX); } }
+        public int AbsDeltaY { get { return Math.Abs(DeltaY); } }
     }
 }
