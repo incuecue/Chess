@@ -42,6 +42,14 @@ namespace Chess
                     figures[x,y]=(Figure) lines[7-y][x];
         }
 
+        void GenerateFEN ()
+        {
+            return FenFigures() + " " + 
+                (moveColor == Color.white ? "w" : "b") +
+                " - - 0 " + moveNumber.ToString();
+
+        }                         
+
         public Figure GetFigureAt(Square square)
         {
             if (square.onBoard())
@@ -63,6 +71,7 @@ namespace Chess
             if (moveColor == Color.black)
                 next.moveNumber++;
             next.moveColor = moveColor.FlipColor();
+            next.GenerateFEN();
             return next;
         }    
     }
